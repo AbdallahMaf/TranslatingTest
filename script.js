@@ -1,14 +1,17 @@
-const langue = document.querySelector('.nav-menu');
-const button = document.querySelector('.buy-ticketsfr');
-const Apropos = document.querySelector('.apropos');
+const langue = document.querySelector('.languageSection');
+const buttons = document.querySelectorAll('.a');
+const textTitle = document.querySelector('.title');
+const textDesc = document.querySelector('.description');
 
-button.forEach(button => {
+
+buttons.forEach(button => {
     button.addEventListener('click', () => {
-        langue.querySelector('.menu-active').classList.remove('menu-active');
-        button.classList.add('menu-active');
+        langue.querySelector('.active').classList.remove('active');
+        button.classList.add('active');
 
-        const attr = button.getAttribute('langue');
-        Apropos.textContent = data[attr].apropos;
+        const attr = button.getAttribute('language');
+        textTitle.textContent = data[attr].title;
+        textDesc.textContent = data[attr].description;
     });
 });
 
