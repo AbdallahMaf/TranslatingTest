@@ -1,12 +1,12 @@
-const langue = document.querySelector('.languageSection');
-const buttons = document.querySelectorAll('.a');
+const lang = document.querySelector('.languageSection');
+const buttons = document.querySelectorAll('a');
 const textTitle = document.querySelector('.title');
 const textDesc = document.querySelector('.description');
 
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
-        langue.querySelector('.active').classList.remove('active');
+        lang.querySelector('.active').classList.remove('active');
         button.classList.add('active');
 
         const attr = button.getAttribute('language');
@@ -32,6 +32,6 @@ const data = {
     "english":
     {
         "title": "Hi! Welcome to Octobre Cyber by #rootsn ",
-        "apropos": "October Cyber ​​by #rootsn is an activity that we organize during the whole month of cybersecurity. This is an opportunity for us to intensify the awareness messages that we send out every day of the year. This year, throughout the month of October, we will ensure that the actors involved in Cyber ​​month provide you with reading keys to understand the challenges of digital security and allow you to act in turn to secure efficiently your personal and professional digital life. Numerous information campaigns will be organized within ministries, businesses, individuals and the population to reach as many people as possible."
+        "description": "October Cyber ​​by #rootsn is an activity that we organize during the whole month of cybersecurity. This is an opportunity for us to intensify the awareness messages that we send out every day of the year. This year, throughout the month of October, we will ensure that the actors involved in Cyber ​​month provide you with reading keys to understand the challenges of digital security and allow you to act in turn to secure efficiently your personal and professional digital life. Numerous information campaigns will be organized within ministries, businesses, individuals and the population to reach as many people as possible."
     }
 }
