@@ -1,3 +1,3 @@
 # Translation
 
-Traguire du text en plusieurs langues avec JavaScript 🛠⚒
+Traduire du text en plusieurs langues avec JavaScript 🛠⚒
